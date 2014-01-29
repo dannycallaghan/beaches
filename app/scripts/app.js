@@ -1,16 +1,13 @@
 'use strict';
 
 angular.module('beachesApp', [
-  'ngCookies',
-  'ngResource',
-  'ngSanitize',
   'ngRoute'
 ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        templateUrl: 'views/list.html',
+        controller: 'ListController'
       })
       .otherwise({
         redirectTo: '/'
