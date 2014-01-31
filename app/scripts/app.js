@@ -6,8 +6,7 @@ angular.module('beachesApp', [
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/list.html',
-        controller: 'ListController'
+        templateUrl: 'views/list.html'
       })
       .otherwise({
         redirectTo: '/'
